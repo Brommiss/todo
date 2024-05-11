@@ -35,14 +35,28 @@
     </div>
     <div v-for="item in theList" :key="item.id" @click="removeItem(item)">{{ item.text }}</div>
   </div>
-
+  <div>
+    <input v-model="a">
+    <input v-model="b">
+    {{ c }}
+  </div>
+  <div>
+    <button @click="">Result</button>
+  </div>
+  <div v-if="data">
+    <p v-for="item in data">{{item.title}}</p>
+  </div>
+  <div v-else>Loading</div>
   <!-- <div :class="classObject">Lolik</div> -->
 </template>
 
 <script setup lang="ts">
-import { nextTick, onMounted, ref } from 'vue'
+import { computed, nextTick, onMounted, ref } from 'vue'
 import { txt } from '@/utils'
 import TheWelcome from './components/TheWelcome.vue'
+import { log } from 'util';
+import type { error } from 'console';
+import { Interface } from 'node:readline/promises';
 
 interface ITodo {
   id: number
@@ -88,9 +102,11 @@ async function increment() {
 }
 
 console.log('key')
-const a = 3
-const b = 4
-const c = a * b
+const a = ref('')
+const b = ref('')
+const c = computed(() => +a.value * +b.value)
+
+
 
 function caclAbobo() {
   return count3.value * 2
@@ -99,8 +115,34 @@ function caclAbobo() {
 onMounted(() => {
   console.log('Счётчик запущен')
   console.log(caclAbobo())
+  fetchToDo()
 })
 
+interface RemoteToDo{
+  id: number
+  title: string
+}
+
+const data = ref<RemoteToDo[] | null>(null)
+async function fetchToDo(){
+  const res = await fetch('https://jsonplaceholder.typicode.com/todos')
+  const toDos = await res.json()
+  data.value = toDos
+}
+
+localStorage.setItem('gay','sex')
+
+//
+// let promice = new Promise(function (resolve, reject) {
+//   if (c > 10) { setTimeout(() => resolve('done'), 1000)}
+//   setTimeout(() => reject('Error'), 1000)
+// })
+// console.log(promice)
+//
+// promice.then(
+//   result => console.log(result),
+//   error => console.log(error)
+// )
 // const isActive = ref(true)
 // const error = ref(null)
 
