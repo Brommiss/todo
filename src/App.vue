@@ -127,7 +127,7 @@ localStorage.setItem('gay', 'sex')
 function isDisIsSee() {
   isDisabled.value = !isDisabled.value
   isSeen.value = !isSeen.value
-}
+} //todo: otsosatb
 //
 // let promice = new Promise(function (resolve, reject) {
 //   if (c > 10) { setTimeout(() => resolve('done'), 1000)}
