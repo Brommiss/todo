@@ -40,8 +40,9 @@
 </template>
 
 <script setup lang="ts">
-import { nextTick, ref } from 'vue'
+import { nextTick, onMounted, ref } from 'vue'
 import { txt } from '@/utils'
+import TheWelcome from './components/TheWelcome.vue'
 
 interface ITodo {
   id: number
@@ -70,6 +71,7 @@ function addNewOnList() {
     text: txt.value
   })
   txt.value = ''
+  console.log(TheWelcome)
 }
 
 function removeItem(item: ITodo) {
@@ -78,12 +80,21 @@ function removeItem(item: ITodo) {
   list.value.splice(index, 1)
 }
 
+caclAbobo()
+
 async function increment() {
   count3.value++
   await nextTick()
 }
 
+function caclAbobo() {
+  return count3.value * 2
+}
 
+onMounted(() => {
+  console.log('Счётчик запущен')
+  console.log(caclAbobo())
+})
 
 // const isActive = ref(true)
 // const error = ref(null)
