@@ -1,0 +1,345 @@
+root: true
+
+env:
+  node: true
+
+ignorePatterns:
+  - "dist"
+  - "dist-map"
+  - "**/*.style.ts"
+  - "*.libs.map.js"
+  - "node_modules"
+  - "__generated__"
+  - "**/*.svg"
+  - "**/*.png"
+  - "**/*.jpg"
+  - "**/*.jpeg"
+  - "**/*.snap"
+  - "**/*.csv"
+  - "**/*.scss"
+  - "**/*.css"
+
+extends:
+  - "eslint:recommended"
+  - "plugin:vue/vue3-essential"
+  - "plugin:vue/vue3-recommended"
+  - "plugin:vue/vue3-strongly-recommended"
+  - "@vue/standard"
+  - "@vue/typescript"
+
+parserOptions:
+  ecmaVersion: 2022
+
+globals:
+  Maybe: true
+
+plugins:
+  - "unused-imports"
+
+rules:
+  no-debugger: error
+  import/no-webpack-loader-syntax: off
+  no-import-assign: error
+  comma-dangle: "off"
+  operator-linebreak: off
+  no-void: off
+  no-console: error
+  dot-notation: error
+  multiline-ternary: [error, always-multiline]
+  arrow-body-style: warn
+  no-unneeded-ternary: warn
+  no-unused-expressions: off
+  no-new-object: error
+  function-call-argument-newline: [error, consistent]
+  function-paren-newline: "off"
+  no-unused-vars: off
+  no-useless-constructor: off
+  no-var: error
+  curly: "off"
+  template-curly-spacing: error
+  prefer-destructuring: error
+  prefer-const: error
+  prefer-template: error
+  one-var: [error, never]
+  one-var-declaration-per-line: [error, always]
+  spaced-comment: [off, always]
+  no-useless-concat: error
+  no-inner-declarations: off
+  no-use-before-define: off
+  no-multi-spaces: error
+  no-throw-literal: error
+  no-sequences: off
+  no-return-assign: off
+  no-proto: error
+  no-lone-blocks: error
+  no-implied-eval: error
+  max-depth: error
+  default-param-last: error
+  default-case-last: error
+  complexity: warn
+  template-tag-spacing: [error, always]
+  vue/no-unused-vars: error
+  vue/no-unused-components: error
+  vue/camelcase: error
+  vue/no-v-html: off
+  vue/object-curly-spacing: [error, always]
+  vue/script-setup-uses-vars: 2
+  vue/eqeqeq: [error, always]
+  vue/require-default-prop: off
+  vue/singleline-html-element-content-newline: off
+  vue/attribute-hyphenation: [error, never]
+  vue/no-v-text-v-html-on-component: off
+  vue/block-tag-newline: error
+  vue/valid-template-root: off
+  vue/custom-event-name-casing: off
+  vue/no-boolean-default: [error, default-false]
+  vue/no-duplicate-attr-inheritance: error
+  vue/no-empty-component-block: error
+  vue/no-reserved-component-names: error
+  vue/no-useless-mustaches: error
+  vue/no-useless-v-bind: error
+  vue/padding-line-between-blocks: [error, always]
+  vue/require-name-property: error
+  vue/v-for-delimiter-style: [error, in]
+  vue/require-explicit-emits: off
+  semi: [error, never]
+  nonblock-statement-body-position: [error, below]
+  generator-star-spacing: "off"
+  "unused-imports/no-unused-imports": error
+
+  "unused-imports/no-unused-vars":
+    - error
+    - vars: "all"
+      varsIgnorePattern: "^_"
+      args: "after-used"
+      argsIgnorePattern: "^_"
+
+  vue/component-api-style:
+    - error
+    - - script-setup
+  indent:
+    - error
+    - 2
+    - SwitchCase: 1
+  max-len:
+    - error
+    - code: 120
+      ignoreTrailingComments: true
+      ignorePattern: "^[ ]*background[\\-:]|^[ ]*import[\\( ]"
+  space-before-function-paren:
+    - error
+    - named: never
+      anonymous: never
+      asyncArrow: always
+  max-statements:
+    - error
+    - max: 15
+  max-params:
+    - error
+    - max: 5
+  max-nested-callbacks:
+    - error
+    - max: 4
+  max-lines-per-function:
+    - error
+    - max: 100
+  max-lines:
+    - error
+    - max: 350
+  no-restricted-imports:
+    - error
+    - paths:
+        - name: lodash
+          importNames:
+            - chain
+          message: Please dont use chain from lodash
+  "@typescript-eslint/no-unused-vars":
+    - error
+    - vars: local
+      args: after-used
+      ignoreRestSiblings: false
+  "@typescript-eslint/no-use-before-define":
+    - error
+    - functions: false
+      variables: false
+      classes: false
+
+  vue/first-attribute-linebreak:
+    - error
+    - singleline: beside
+      multiline: beside
+  vue/script-indent:
+    - error
+    - 2
+    - baseIndent: 0
+      switchCase: 1
+  vue/html-closing-bracket-newline:
+    - error
+    - singleline: never
+      multiline: never
+  vue/html-closing-bracket-spacing:
+    - error
+    - startTag: never
+      endTag: never
+      selfClosingTag: never
+  vue/max-attributes-per-line:
+    - error
+    - singleline: 2
+      multiline: 1
+  vue/html-self-closing:
+    - error
+    - html:
+        void: never
+        normal: always
+        component: always
+      svg: always
+      math: always
+  vue/attributes-order:
+    - error
+    - order:
+        - CONDITIONALS
+        - DEFINITION
+        - LIST_RENDERING
+        - RENDER_MODIFIERS
+        - GLOBAL
+        - UNIQUE
+        - TWO_WAY_BINDING
+        - CONTENT
+        - OTHER_DIRECTIVES
+        - OTHER_ATTR
+        - EVENTS
+  vue/order-in-components:
+    - error
+    - order:
+        - el
+        - name
+        - parent
+        - functional
+        - - delimiters
+          - comments
+        - - components
+          - directives
+        - extends
+        - mixins
+        - inheritAttrs
+        - emits
+        - - props
+          - propsData
+        - beforeCreate
+        - setup
+        - created
+        - beforeMount
+        - mounted
+        - beforeUpdate
+        - updated
+        - activated
+        - deactivated
+        - beforeUnmount
+        - destroyed
+        - data
+        - - template
+          - render
+        - renderError
+        - methods
+        - computed
+        - watch
+  vue/object-curly-newline:
+    - error
+    - consistent: true
+  vue/html-indent:
+    - error
+    - 2
+    - alignAttributesVertically: true
+  vue/v-slot-style:
+    - error
+    - atComponent: shorthand
+      default: shorthand
+      named: shorthand
+  vue/no-undef-components:
+    - error
+    - ignorePatterns:
+        - router-view
+        - router-link
+        - Q
+        - Nuxt
+        - ClientOnly
+  vue/component-name-in-template-casing:
+    - error
+    - PascalCase
+    - registeredComponentsOnly: true
+      ignores:
+        - teleport
+        - component
+        - router-view
+        - router-link
+        - transition
+        - transition-group
+  vue/match-component-file-name:
+    - error
+    - extensions:
+        - vue
+        - js
+        - ts
+      shouldMatchCase: true
+  vue/no-potential-component-option-typo:
+    - error
+    - presets:
+        - vue
+        - vue-router
+  vue/no-restricted-component-options:
+    - error
+    - name: model
+      message: '"model" option is deprecated in vue3'
+
+overrides:
+  - files: ["*.yaml", "*.yml"]
+    plugins:
+      - yaml
+    extends:
+      - plugin:yaml/recommended
+
+  - files: ["*.ts"]
+    rules:
+      indent: off
+
+  - files:
+      - "**/*.spec.{j,t}s"
+      - "**/*.stories?(.legacy).{j,t}s"
+    rules:
+      no-console: off
+      max-len: off
+      max-lines: off
+      max-lines-per-function: off
+      max-nested-callbacks: off
+      no-return-assign: off
+      import/no-named-default: off
+      prefer-destructuring: off
+      vue/require-prop-types: off
+      vue/require-name-property: off
+      vue/match-component-file-name: off
+
+  - files: ["**/*.spec.{j,t}s"]
+    env:
+      jest: true
+
+  - files:
+    - "*.+(json|css|scss|styl|md)"
+    extends:
+      - plugin:prettier-vue/recommended
+
+  - files:
+      - "*.+(graphql|gql)"
+    parser: "@graphql-eslint/eslint-plugin"
+    plugins:
+      - "@graphql-eslint"
+    extends:
+      - plugin:prettier/recommended
+    rules:
+      prettier/prettier: error
+
+  - files: ["*.json"]
+    parser: eslint-plugin-json-es
+    extends: plugin:eslint-plugin-json-es/recommended
+    rules:
+      comma-dangle: [error, never]
+
