@@ -12,7 +12,7 @@
     <button @click="(isDisabled = !isDisabled), (isSeen = !isSeen)">
       {{ isDisabled ? 'Off' : 'On' }}
     </button>
-    <button :disabled="isDisabled" @click="increment">Счётчик: {{ count2 }}</button>
+    <button :disabled="isDisabled" @click="increment">Счётчик: {{ count3 }}</button>
     <div v-if="seen">
       {{ isDisabled ? 'YES' : 'NO' }}
     </div>
@@ -49,12 +49,12 @@ interface ITodo {
 }
 
 const count = ref(0)
-const count2 = ref(0)
+const count3 = ref(0)
 const seen = ref(false)
 const isSeen = ref(true)
 const isDisabled = ref(false)
 function clear() {
-  count2.value = 0
+  count3.value = 0
   count.value = 0
   txt.value = ''
   list.value.length = 0
@@ -79,9 +79,11 @@ function removeItem(item: ITodo) {
 }
 
 async function increment() {
-  count2.value++
+  count3.value++
   await nextTick()
 }
+
+
 
 // const isActive = ref(true)
 // const error = ref(null)
