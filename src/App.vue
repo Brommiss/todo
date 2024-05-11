@@ -1,12 +1,8 @@
-<style>
-.inText {
-  width: 220px;
-}
-</style>
-
 <template>
   <div id="app">
-    <button @click="count++" @mouseenter="seen = true" @mouseleave="seen = false">
+    <button @click="count++"
+            @mouseenter="seen = true"
+            @mouseleave="seen = false">
       Счётчик: {{ count }}
     </button>
     <button @click="(isDisabled = !isDisabled), (isSeen = !isSeen)">
@@ -17,7 +13,7 @@
       {{ isDisabled ? 'YES' : 'NO' }}
     </div>
     <div>
-      <input v-model="txt" v-if="isSeen" />
+      <input v-if="isSeen" v-model="txt">
     </div>
     <!-- <div>
       <p>{{ text }}</p>
@@ -27,13 +23,21 @@
       <label for="checkbox">Разрешено ли добавлять?</label>
     </div> -->
     <div>
-      <button class="addButton" :disabled="!txt" @click="addNewOnList">Add</button>
+      <button class="addButton"
+              :disabled="!txt"
+              @click="addNewOnList">
+        Add
+      </button>
       <button @click="clear">Clear</button>
     </div>
     <div>
       <p>{{ theList }}</p>
     </div>
-    <div v-for="item in theList" :key="item.id" @click="removeItem(item)">{{ item.text }}</div>
+    <div v-for="item in theList"
+         :key="item.id"
+         @click="removeItem(item)">
+      {{ item.text }}
+    </div>
   </div>
 
   <!-- <div :class="classObject">Lolik</div> -->
@@ -135,3 +139,9 @@ onMounted(() => {
 // })
 // console.log(fullName)
 </script>
+
+<style>
+.inText {
+  width: 220px;
+}
+</style>
