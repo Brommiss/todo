@@ -31,17 +31,18 @@
       <button @click="clear">Clear</button>
     </div>
     <div>
-      <p>{{ list }}</p>
+      <p>{{ theList }}</p>
     </div>
-    <div v-for="item in list" :key="item.id" @click="removeItem(item)">{{ item.text }}</div>
+    <div v-for="item in theList" :key="item.id" @click="removeItem(item)">{{ item.text }}</div>
   </div>
 
   <!-- <div :class="classObject">Lolik</div> -->
 </template>
 
 <script setup lang="ts">
-import { nextTick, ref } from 'vue'
+import { nextTick, onMounted, ref } from 'vue'
 import { txt } from '@/utils'
+import TheWelcome from './components/TheWelcome.vue'
 
 interface ITodo {
   id: number
@@ -57,33 +58,47 @@ function clear() {
   count3.value = 0
   count.value = 0
   txt.value = ''
-  list.value.length = 0
+  theList.value.length = 0
 }
 // const checked = ref(false) //чекбоксовое значение
-const list = ref<ITodo[]>([])
+const theList = ref<ITodo[]>([])
 
 let nextlistId = 0
 
 function addNewOnList() {
-  list.value.push({
+  theList.value.push({
     id: nextlistId++,
     text: txt.value
   })
   txt.value = ''
+  console.log(TheWelcome)
 }
 
 function removeItem(item: ITodo) {
   console.log(item)
-  const index = list.value.indexOf(item)
-  list.value.splice(index, 1)
+  const index = theList.value.indexOf(item)
+  theList.value.splice(index, 1)
 }
+
+caclAbobo()
 
 async function increment() {
   count3.value++
   await nextTick()
 }
 
+const a = 3
+const b = 4
+const c = a * b
 
+function caclAbobo() {
+  return count3.value * 2
+}
+
+onMounted(() => {
+  console.log('Счётчик запущен')
+  console.log(caclAbobo())
+})
 
 // const isActive = ref(true)
 // const error = ref(null)
