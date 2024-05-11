@@ -43,7 +43,7 @@ rules:
   comma-dangle: "off"
   operator-linebreak: off
   no-void: off
-  no-console: error
+  no-console: warn
   dot-notation: error
   multiline-ternary: [error, always-multiline]
   arrow-body-style: warn
