@@ -87,6 +87,10 @@ async function increment() {
   await nextTick()
 }
 
+const a = 3
+const b = 4
+const c = a * b
+
 function caclAbobo() {
   return count3.value * 2
 }
