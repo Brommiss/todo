@@ -24,9 +24,17 @@ npm install
 
 ```sh
 npm run dev
+sdf
 ```
-
+asdfasdf
 ### Type-Check, Compile and Minify for Production
+asdfasdf
+sdffgh
+dfg
+h
+dfgh
+dfg
+h
 
 ```sh
 npm run build
