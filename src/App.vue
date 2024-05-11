@@ -1,21 +1,12 @@
 <style>
-.inText {
-  width: 220px;
-}
 </style>
 
 <template>
   <div id="app">
-    <button @click="count++" @mouseenter="seen = true" @mouseleave="seen = false">
-      Счётчик: {{ count }}
-    </button>
-    <button @click="(isDisabled = !isDisabled), (isSeen = !isSeen)">
-      {{ isDisabled ? 'Off' : 'On' }}
-    </button>
-    <button :disabled="isDisabled" @click="increment">Счётчик: {{ count3 }}</button>
-    <div v-if="seen">
-      {{ isDisabled ? 'YES' : 'NO' }}
-    </div>
+    <button @click="count++" @mouseenter="seen = true" @mouseleave="seen = false" v-text="'Счётчик: ' + count"  />
+    <button @click="isDisIsSee()" v-text="isDisabled ? 'Off' : 'On'" />
+    <button :disabled="isDisabled" @click="increment" v-text="'Счётчик: ' + count3" />
+    <div v-if="seen" v-text="isDisabled ? 'YES' : 'NO'" />
     <div>
       <input v-model="txt" v-if="isSeen" />
     </div>
@@ -27,36 +18,30 @@
       <label for="checkbox">Разрешено ли добавлять?</label>
     </div> -->
     <div>
-      <button class="addButton" :disabled="!txt" @click="addNewOnList">Add</button>
-      <button @click="clear">Clear</button>
+      <button class="addButton" :disabled="!txt" @click="addNewOnList" v-text="'Add'" />
+      <button @click="clear" v-text="'Clear'" />
     </div>
     <div>
-      <p>{{ theList }}</p>
+      <p v-text="theList" />
     </div>
-    <div v-for="item in theList" :key="item.id" @click="removeItem(item)">{{ item.text }}</div>
+    <div v-for="item in theList" :key="item.id" @click="removeItem(item)" v-text="item.text" />
   </div>
   <div>
     <input v-model="a">
     <input v-model="b">
-    {{ c }}
-  </div>
-  <div>
-    <button @click="">Result</button>
+    <span v-text="c" />
   </div>
   <div v-if="data">
-    <p v-for="item in data">{{item.title}}</p>
+    <p v-for="item in data" v-text="item.title" :key="item.id" />
   </div>
-  <div v-else>Loading</div>
-  <!-- <div :class="classObject">Lolik</div> -->
+  <div v-else v-text="'Loading'" />
 </template>
 
 <script setup lang="ts">
 import { computed, nextTick, onMounted, ref } from 'vue'
 import { txt } from '@/utils'
 import TheWelcome from './components/TheWelcome.vue'
-import { log } from 'util';
-import type { error } from 'console';
-import { Interface } from 'node:readline/promises';
+
 
 interface ITodo {
   id: number
@@ -66,8 +51,8 @@ interface ITodo {
 const count = ref(0)
 const count3 = ref(0)
 const seen = ref(false)
-const isSeen = ref(true)
-const isDisabled = ref(false)
+let isSeen = ref(true)
+let isDisabled = ref(false)
 function clear() {
   count3.value = 0
   count.value = 0
@@ -77,11 +62,11 @@ function clear() {
 // const checked = ref(false) //чекбоксовое значение
 const theList = ref<ITodo[]>([])
 
-let nextlistId = 0
+let nextListId = 0
 
 function addNewOnList() {
   theList.value.push({
-    id: nextlistId++,
+    id: nextListId++,
     text: txt.value
   })
   txt.value = ''
@@ -94,7 +79,7 @@ function removeItem(item: ITodo) {
   theList.value.splice(index, 1)
 }
 
-caclAbobo()
+calcAbobo()
 
 async function increment() {
   count3.value++
@@ -108,13 +93,13 @@ const c = computed(() => +a.value * +b.value)
 
 
 
-function caclAbobo() {
+function calcAbobo() {
   return count3.value * 2
 }
 
 onMounted(() => {
   console.log('Счётчик запущен')
-  console.log(caclAbobo())
+  console.log(calcAbobo())
   fetchToDo()
 })
 
@@ -124,14 +109,18 @@ interface RemoteToDo{
 }
 
 const data = ref<RemoteToDo[] | null>(null)
+
 async function fetchToDo(){
   const res = await fetch('https://jsonplaceholder.typicode.com/todos')
-  const toDos = await res.json()
-  data.value = toDos
+  data.value = await res.json()
 }
 
 localStorage.setItem('gay','sex')
 
+function isDisIsSee(){
+  isDisabled.value = !isDisabled.value
+  isSeen.value = !isSeen.value
+}
 //
 // let promice = new Promise(function (resolve, reject) {
 //   if (c > 10) { setTimeout(() => resolve('done'), 1000)}
