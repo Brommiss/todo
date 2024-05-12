@@ -13,9 +13,7 @@ function past(h: number, m: number, s: number): number {
   return h * 36e5 + m * 6e4 + s * 1e3
 }
 
-busStops([[10, 0], [3, 5], [5, 8]])
+console.log(busStops([[10, 0], [3, 5], [5, 8]]))
 function busStops(key: any) {
-  const ms = key.flatMap((inKey: any) => inKey[0] - inKey[1])
-  const summ = ms.reduce((sum: any, m: any) => sum + m, 0)
-  return summ
+  return key.reduce((sum: any, m: any) => sum + m[0] - m[1], 0)
 }
