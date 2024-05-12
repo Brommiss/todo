@@ -9,13 +9,13 @@ function makeNegative(num: number): number {
 }
 
 console.log(past(1, 4, 2))
-function past(h, m, s) {
+function past(h: number, m: number, s: number): number {
   return h * 36e5 + m * 6e4 + s * 1e3
 }
 
 busStops([[10, 0], [3, 5], [5, 8]])
-function busStops(key) {
-  const ms = key.flatMap((inKey) => inKey[0] - inKey[1])
-  const summ = ms.reduce((sum, m) => sum + m, 0)
+function busStops(key: any) {
+  const ms = key.flatMap((inKey: any) => inKey[0] - inKey[1])
+  const summ = ms.reduce((sum: any, m: any) => sum + m, 0)
   return summ
 }
