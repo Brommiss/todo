@@ -1,11 +1,6 @@
-function greet() {
-  return 'hello world!'
-}
-
-const a = 'sex in a big city'
-reverseWord(a)
-function reverseWord(a) {
-  return a.split(' ').map((x) => x.split('').reverse().join('')).join(' ')
+console.log(reverseWord('sex in a big city'))
+function reverseWord(a: any) {
+  return a.split(' ').map((x: any) => x.split('').reverse().join('')).join(' ')
 }
 
 console.log(makeNegative(20))
