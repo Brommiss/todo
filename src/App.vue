@@ -117,10 +117,10 @@ interface RemoteToDo{
 
 const data = ref<RemoteToDo[] | null>(null)
 
-async function fetchToDo() {
-  const res = await fetch('https://jsonplaceholder.typicode.com/todos')
-  data.value = await res.json()
-}
+// async function fetchToDo() {
+//   const res = await fetch('https://jsonplaceholder.typicode.com/todos')
+//   data.value = await res.json()
+// }
 
 localStorage.setItem('gay', 'sex')
 

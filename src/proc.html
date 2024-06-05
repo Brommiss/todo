@@ -1,0 +1,1985 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title><!DOCTYPE html>
+    <html lang='en'>
+    <head>
+    <meta charset='utf-8'>
+    <meta content='width=device-width, initial-scale=1, user-scalable=no' name='viewport'>
+    <meta content='yes' name='apple-mobile-web-app-capable'>
+    <link href='https://browser.geekbench.com/processors/intel-core-i9-13900' rel='canonical'>
+    <meta name="csrf-param" content="authenticity_token" />
+    <meta name="csrf-token" content="rKYN1atWH/ej2tKbi40MVi48DDHYKKmqWqA06Bar+CQ9MADfvHyY5r1/gNQtsvhBfIePEaXw3F4JnM5vmr31uQ==" />
+    <script src="/assets/application-724b5759bf84a06f7481485a6937919999a0625d43cdea9d498acc9f10ae23ec.js"></script>
+    <link rel="stylesheet" media="screen" href="/assets/application-ce3ea1bfb5925fb8af577ffe399f3425aba1f3ab56b3706bb5ace3885b9ed723.css" />
+    <title>Intel Core i9-13900 Benchmarks
+    - Geekbench</title>
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-83282280-2', 'auto');
+    ga('send', 'pageview');
+  </script>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-NP04Y57Z6W"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-NP04Y57Z6W');
+  </script>
+  <!-- Hotjar Tracking Code for Geekbench Browser -->
+  <script>
+    (function(h,o,t,j,a,r){
+      h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+      h._hjSettings={hjid:390387,hjsv:6};
+      a=o.getElementsByTagName('head')[0];
+      r=o.createElement('script');r.async=1;
+      r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+      a.appendChild(r);
+    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+  </script>
+
+  <link rel="stylesheet" media="screen" href="/assets/geekbench6-de582fcc3cbb2e58918a7d81d2de0fd7edd2f6f310ad395ad3cb85301c517e7e.css" />
+</head>
+<body class='rosedale'>
+<nav class="navbar fixed-top navbar-expand-lg navbar-dark">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <img height="30" alt="Geekbench Browser" src="/assets/browser-dark-4d9f1af82043f60fd55f5385de9dedf44baec6247dac9f8e738de9eee84bf084.svg" />
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownGeekbench6" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Geekbench 6</a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownGeekbench6">
+            <a class="dropdown-item" href="/v6/cpu/singlecore">Top Single-Core Results</a>
+            <a class="dropdown-item" href="/v6/cpu/multicore">Top Multi-Core Results</a>
+            <a class="dropdown-item" href="/v6/cpu">Recent CPU Results</a>
+            <div class="dropdown-divider">
+            </div>
+            <a class="dropdown-item" href="/v6/compute">Recent GPU Results</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownGeekbenchML" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Geekbench ML</a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownGeekbench4">
+            <a class="dropdown-item" href="/ml/v0/inference">Recent Results</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownBenchmarkCharts" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Benchmark Charts</a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownBenchmarkCharts">
+            <a class="dropdown-item" href="/android-benchmarks">Android Benchmark Chart</a>
+            <a class="dropdown-item" href="/ios-benchmarks">iOS Benchmark Chart</a>
+            <a class="dropdown-item" href="/mac-benchmarks">Mac Benchmark Chart</a>
+            <a class="dropdown-item" href="/processor-benchmarks">Processor Benchmark Chart</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="/ml-benchmarks">ML Benchmark Chart</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="/metal-benchmarks">Metal Benchmark Chart</a>
+            <a class="dropdown-item" href="/opencl-benchmarks">OpenCL Benchmark Chart</a>
+            <a class="dropdown-item" href="/vulkan-benchmarks">Vulkan Benchmark Chart</a>
+          </div>
+        </li>
+        <form action="/search" class="form-inline my-2 my-lg-0">
+          <input name="q" class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"> <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewbox="0 0 14 14">
+          <path d="M2 6a4 4 0 1 1 4 4 4.004 4.004 0 0 1-4-4m11.707 6.293l-2.822-2.822a6.019 6.019 0 1 0-1.414 1.414l2.822 2.822a1 1 0 0 0 1.414-1.414" fill="#FFFFFF"></path></svg>
+        </form>
+      </ul>
+      <ul class="navbar-nav ml-auto right">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownAccount" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Account</a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownAccount">
+            <a class="dropdown-item" href="/user/new">Sign Up</a>
+            <a class="dropdown-item" href="/session/new">Log In</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class='container' id='wrap'>
+  <div class='row'>
+    <div class='primary col-lg-9 order-lg-first'>
+      <div class='page-header'>
+        <h1>Intel Core i9-13900 Benchmarks</h1>
+      </div>
+      <p>Benchmark results for the Intel Core i9-13900 can be found below. The data on this chart is gathered from user-submitted Geekbench 6 results from the Geekbench Browser.</p>
+      <p><a href="https://www.geekbench.com/">Geekbench 6</a> scores are calibrated against a baseline score of 2500 (which is the score of an Intel Core i7-12700). Higher scores are better, with double the score indicating double the performance.</p>
+      <hr>
+      <div class='heading'>
+        <h3>CPU Benchmark Scores</h3>
+      </div>
+      <div class='table-wrapper cpu'>
+        <div class='score-container score-container-1 desktop'>
+          <div class='score'>2724</div>
+          <div class='note'>Single-Core Score</div>
+        </div>
+        <div class='score-container desktop'>
+          <div class='score'>16413</div>
+          <div class='note'>Multi-Core Score</div>
+        </div>
+        <div class='empty-platform-info'></div>
+      </div>
+      <div class='heading'>
+        <h3>Processor Information</h3>
+      </div>
+      <div class='table-wrapper'>
+        <table class='table system-table'>
+          <tbody>
+          <tr>
+            <td class='system-name'>Processor</td>
+            <td class='system-value'>Intel Core i9-13900</td>
+          </tr>
+          <tr>
+            <td class='system-name'>Frequency</td>
+            <td class='system-value'>2000 MHz</td>
+          </tr>
+          <tr>
+            <td class='system-name'>Maximum Frequency</td>
+            <td class='system-value'>5600 MHz</td>
+          </tr>
+          <tr>
+            <td class='system-name'>Cores</td>
+            <td class='system-value'>24</td>
+          </tr>
+          <tr>
+            <td class='system-name'>Threads</td>
+            <td class='system-value'>32</td>
+          </tr>
+          <tr>
+            <td class='system-name'>TDP</td>
+            <td class='system-value'>65 W</td>
+          </tr>
+          <tr>
+            <td class='system-name'>GPU</td>
+            <td class='system-value'>Intel UHD Graphics 770</td>
+          </tr>
+          <tr>
+            <td class='system-name'>Codename</td>
+            <td class='system-value'>Raptor Lake</td>
+          </tr>
+          <tr>
+            <td class='system-name'>Package</td>
+            <td class='system-value'>Socket 1700 LGA</td>
+          </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class='heading'>
+        <h3>Raptor Lake Benchmarks</h3>
+      </div>
+      <ul class='nav nav-pills'>
+        <li class='nav-item'>
+          <a class='nav-link active' data-toggle='tab' href='#family-64-single'>Single-Core</a>
+        </li>
+        <li class='nav-item'>
+          <a class='nav-link' data-toggle='tab' href='#family-64-multi'>Multi-Core</a>
+        </li>
+      </ul>
+      <div class='tab-content'>
+        <div class='table-responsive tab-pane active' id='family-64-single'>
+          <div class='table-wrapper'>
+            <table class='table benchmark-chart-table'>
+              <thead>
+              <tr class='stacked-heading'>
+                <th class='name'>Processor</th>
+                <th class='score'>Score</th>
+                <th class='graph'></th>
+              </tr>
+              </thead>
+              <tbody>
+              <tr class=''>
+                <td class='name'>
+                  <div class='device-icon intel'></div>
+                  <a href='/processors/intel-core-i9-13900ks'>Intel Core i9-13900KS</a>
+                  <div class='description'>
+                    3.2 GHz (24 cores)
+                  </div>
+                </td>
+                <td class='score'>3108</td>
+                <td class='graph'>
+                  <div class='benchmark-bar' style='width:100%'>
+                    &nbsp;
+                  </div>
+                </td>
+              </tr>
+              <tr class=''>
+                <td class='name'>
+                  <div class='device-icon intel'></div>
+                  <a href='/processors/intel-core-i9-14900kf'>Intel Core i9-14900KF</a>
+                  <div class='description'>
+                    3.2 GHz (24 cores)
+                  </div>
+                </td>
+                <td class='score'>3103</td>
+                <td class='graph'>
+                  <div class='benchmark-bar' style='width:99%'>
+                    &nbsp;
+                  </div>
+                </td>
+              </tr>
+              <tr class=''>
+                <td class='name'>
+                  <div class='device-icon intel'></div>
+                  <a href='/processors/intel-core-i9-14900k'>Intel Core i9-14900K</a>
+                  <div class='description'>
+                    3.2 GHz (24 cores)
+                  </div>
+                </td>
+                <td class='score'>3097</td>
+                <td class='graph'>
+                  <div class='benchmark-bar' style='width:99%'>
+                    &nbsp;
+                  </div>
+                </td>
+              </tr>
+              <tr class=''>
+                <td class='name'>
+                  <div class='device-icon intel'></div>
+                  <a href='/processors/intel-core-i7-14700kf'>Intel Core i7-14700KF</a>
+                  <div class='description'>
+                    3.4 GHz (20 cores)
+                  </div>
+                </td>
+                <td class='score'>2986</td>
+                <td class='graph'>
+                  <div class='benchmark-bar' style='width:96%'>
+                    &nbsp;
+                  </div>
+                </td>
+              </tr>
+              <tr class=''>
+                <td class='name'>
+                  <div class='device-icon intel'></div>
+                  <a href='/processors/intel-core-i9-13900k'>Intel Core i9-13900K</a>
+                  <div class='description'>
+                    3.0 GHz (24 cores)
+                  </div>
+                </td>
+                <td class='score'>2981</td>
+                <td class='graph'>
+                  <div class='benchmark-bar' style='width:95%'>
+                    &nbsp;
+                  </div>
+                </td>
+              </tr>
+              <tr class=''>
+                <td class='name'>
+                  <div class='device-icon intel'></div>
+                  <a href='/processors/intel-core-i9-13900kf'>Intel Core i9-13900KF</a>
+                  <div class='description'>
+                    3.0 GHz (24 cores)
+                  </div>
+                </td>
+                <td class='score'>2968</td>
+                <td class='graph'>
+                  <div class='benchmark-bar' style='width:95%'>
+                    &nbsp;
+                  </div>
+                </td>
+              </tr>
+              <tr class=''>
+                <td class='name'>
+                  <div class='device-icon intel'></div>
+                  <a href='/processors/intel-core-i9-14900f'>Intel Core i9-14900F</a>
+                  <div class='description'>
+                    2.0 GHz (24 cores)
+                  </div>
+                </td>
+                <td class='score'>2967</td>
+                <td class='graph'>
+                  <div class='benchmark-bar' style='width:95%'>
+                    &nbsp;
+                  </div>
+                </td>
+              </tr>
+              <tr class=''>
+                <td class='name'>
+                  <div class='device-icon intel'></div>
+                  <a href='/processors/intel-core-i9-14900'>Intel Core i9-14900</a>
+                  <div class='description'>
+                    2.0 GHz (24 cores)
+                  </div>
+                </td>
+                <td class='score'>2956</td>
+                <td class='graph'>
+                  <div class='benchmark-bar' style='width:95%'>
+                    &nbsp;
+                  </div>
+                </td>
+              </tr>
+              <tr class=''>
+                <td class='name'>
+                  <div class='device-icon intel'></div>
+                  <a href='/processors/intel-core-i7-14700k'>Intel Core i7-14700K</a>
+                  <div class='description'>
+                    3.4 GHz (20 cores)
+                  </div>
+                </td>
+                <td class='score'>2947</td>
+                <td class='graph'>
+                  <div class='benchmark-bar' style='width:94%'>
+                    &nbsp;
+                  </div>
+                </td>
+              </tr>
+              <tr class=''>
+                <td class='name'>
+                  <div class='device-icon intel'></div>
+                  <a href='/processors/intel-core-i7-13700kf'>Intel Core i7-13700KF</a>
+                  <div class='description'>
+                    3.4 GHz (16 cores)
+                  </div>
+                </td>
+                <td class='score'>2893</td>
+                <td class='graph'>
+                  <div class='benchmark-bar' style='width:93%'>
+                    &nbsp;
+                  </div>
+                </td>
+              </tr>
+              <tr class=''>
+                <td class='name'>
+                  <div class='device-icon intel'></div>
+                  <a href='/processors/intel-core-i7-13700k'>Intel Core i7-13700K</a>
+                  <div class='description'>
+                    3.4 GHz (16 cores)
+                  </div>
+                </td>
+                <td class='score'>2841</td>
+                <td class='graph'>
+                  <div class='benchmark-bar' style='width:91%'>
+                    &nbsp;
+                  </div>
+                </td>
+              </tr>
+              <tr class=''>
+                <td class='name'>
+                  <div class='device-icon intel'></div>
+                  <a href='/processors/intel-core-i5-14600k'>Intel Core i5-14600K</a>
+                  <div class='description'>
+                    3.5 GHz (14 cores)
+                  </div>
+                </td>
+                <td class='score'>2804</td>
+                <td class='graph'>
+                  <div class='benchmark-bar' style='width:90%'>
+                    &nbsp;
+                  </div>
+                </td>
+              </tr>
+              <tr class=''>
+                <td class='name'>
+                  <div class='device-icon intel'></div>
+                  <a href='/processors/intel-core-i7-1370pe'>Intel Core i7-1370PE</a>
+                  <div class='description'>
+                    1.9 GHz (14 cores)
+                  </div>
+                </td>
+                <td class='score'>2791</td>
+                <td class='graph'>
+                  <div class='benchmark-bar' style='width:89%'>
+                    &nbsp;
+                  </div>
+                </td>
+              </tr>
+              <tr class=''>
+                <td class='name'>
+                  <div class='device-icon intel'></div>
+                  <a href='/processors/intel-core-i9-14900hx'>Intel Core i9-14900HX</a>
+                  <div class='description'>
+                    2.2 GHz (24 cores)
+                  </div>
+                </td>
+                <td class='score'>2766</td>
+                <td class='graph'>
+                  <div class='benchmark-bar' style='width:88%'>
+                    &nbsp;
+                  </div>
+                </td>
+              </tr>
+              <tr class=''>
+                <td class='name'>
+                  <div class='device-icon intel'></div>
+                  <a href='/processors/intel-core-i5-14600kf'>Intel Core i5-14600KF</a>
+                  <div class='description'>
+                    3.5 GHz (14 cores)
+                  </div>
+                </td>
+                <td class='score'>2759</td>
+                <td class='graph'>
+                  <div class='benchmark-bar' style='width:88%'>
+                    &nbsp;
+                  </div>
+                </td>
+              </tr>
+              <tr class=''>
+                <td class='name'>
+                  <div class='device-icon intel'></div>
+                  <a href='/processors/intel-core-i7-14700'>Intel Core i7-14700</a>
+                  <div class='description'>
+                    2.1 GHz (20 cores)
+                  </div>
+                </td>
+                <td class='score'>2756</td>
+                <td class='graph'>
+                  <div class='benchmark-bar' style='width:88%'>
+                    &nbsp;
+                  </div>
+                </td>
+              </tr>
+              <tr class=''>
+                <td class='name'>
+                  <div class='device-icon intel'></div>
+                  <a href='/processors/intel-core-i5-13600kf'>Intel Core i5-13600KF</a>
+                  <div class='description'>
+                    3.5 GHz (14 cores)
+                  </div>
+                </td>
+                <td class='score'>2751</td>
+                <td class='graph'>
+                  <div class='benchmark-bar' style='width:88%'>
+                    &nbsp;
+                  </div>
+                </td>
+              </tr>
+              <tr class=''>
+                <td class='name'>
+                  <div class='device-icon intel'></div>
+                  <a href='/processors/intel-core-i9-13900f'>Intel Core i9-13900F</a>
+                  <div class='description'>
+                    2.0 GHz (24 cores)
+                  </div>
+                </td>
+                <td class='score'>2732</td>
+                <td class='graph'>
+                  <div class='benchmark-bar' style='width:87%'>
+                    &nbsp;
+                  </div>
+                </td>
+              </tr>
+              <tr class=''>
+                <td class='name'>
+                  <div class='device-icon intel'></div>
+                  <a href='/processors/intel-core-i7-14700f'>Intel Core i7-14700F</a>
+                  <div class='description'>
+                    2.1 GHz (20 cores)
+                  </div>
+                </td>
+                <td class='score'>2726</td>
+                <td class='graph'>
+                  <div class='benchmark-bar' style='width:87%'>
+                    &nbsp;
+                  </div>
+                </td>
+              </tr>
+              <tr class='current-device'>
+                <td class='name'>
+                  <div class='device-icon intel'></div>
+                  <a href='/processors/intel-core-i9-13900'>Intel Core i9-13900</a>
+                  <div class='description'>
+                    2.0 GHz (24 cores)
+                  </div>
+                </td>
+                <td class='score'>2724</td>
+                <td class='graph'>
+                  <div class='benchmark-bar' style='width:87%'>
+                    &nbsp;
+                  </div>
+                </td>
+              </tr>
+              <tr class=''>
+                <td class='name'>
+                  <div class='device-icon intel'></div>
+                  <a href='/processors/intel-core-i5-13600k'>Intel Core i5-13600K</a>
+                  <div class='description'>
+                    3.5 GHz (14 cores)
+                  </div>
+                </td>
+                <td class='score'>2667</td>
+                <td class='graph'>
+                  <div class='benchmark-bar' style='width:85%'>
+                    &nbsp;
+                  </div>
+                </td>
+              </tr>
+              <tr class=''>
+                <td class='name'>
+                  <div class='device-icon intel'></div>
+                  <a href='/processors/intel-core-i7-13700f'>Intel Core i7-13700F</a>
+                  <div class='description'>
+                    2.1 GHz (16 cores)
+                  </div>
+                </td>
+                <td class='score'>2654</td>
+                <td class='graph'>
+                  <div class='benchmark-bar' style='width:85%'>
+                    &nbsp;
+                  </div>
+                </td>
+              </tr>
+              <tr class=''>
+                <td class='name'>
+                  <div class='device-icon intel'></div>
+                  <a href='/processors/intel-core-i7-13700'>Intel Core i7-13700</a>
+                  <div class='description'>
+                    2.1 GHz (16 cores)
+                  </div>
+                </td>
+                <td class='score'>2629</td>
+                <td class='graph'>
+                  <div class='benchmark-bar' style='width:84%'>
+                    &nbsp;
+                  </div>
+                </td>
+              </tr>
+              <tr class=''>
+                <td class='name'>
+                  <div class='device-icon intel'></div>
+                  <a href='/processors/intel-core-i5-14600t'>Intel Core i5-14600T</a>
+                  <div class='description'>
+                    1.8 GHz (14 cores)
+                  </div>
+                </td>
+                <td class='score'>2609</td>
+                <td class='graph'>
+                  <div class='benchmark-bar' style='width:83%'>
+                    &nbsp;
+                  </div>
+                </td>
+              </tr>
+              <tr class=''>
+                <td class='name'>
+                  <div class='device-icon intel'></div>
+                  <a href='/processors/intel-core-i5-14600'>Intel Core i5-14600</a>
+                  <div class='description'>
+                    2.7 GHz (14 cores)
+                  </div>
+                </td>
+                <td class='score'>2570</td>
+                <td class='graph'>
+                  <div class='benchmark-bar' style='width:82%'>
+                    &nbsp;
+                  </div>
+                </td>
+              </tr>
+              <tr class=''>
+                <td class='name'>
+                  <div class='device-icon intel'></div>
+                  <a href='/processors/intel-core-i5-14500'>Intel Core i5-14500</a>
+                  <div class='description'>
+                    2.6 GHz (14 cores)
+                  </div>
+                </td>
+                <td class='score'>2537</td>
+                <td class='graph'>
+                  <div class='benchmark-bar' style='width:81%'>
+                    &nbsp;
+                  </div>
+                </td>
+              </tr>
+              <tr class=''>
+                <td class='name'>
+                  <div class='device-icon intel'></div>
+                  <a href='/processors/intel-core-i7-14700hx'>Intel Core i7-14700HX</a>
+                  <div class='description'>
+                    2.1 GHz (20 cores)
+                  </div>
+                </td>
+                <td class='score'>2490</td>
+                <td class='graph'>
+                  <div class='benchmark-bar' style='width:80%'>
+                    &nbsp;
+                  </div>
+                </td>
+              </tr>
+              <tr class=''>
+                <td class='name'>
+                  <div class='device-icon intel'></div>
+                  <a href='/processors/intel-core-i7-14650hx'>Intel Core i7-14650HX</a>
+                  <div class='description'>
+                    2.2 GHz (16 cores)
+                  </div>
+                </td>
+                <td class='score'>2482</td>
+                <td class='graph'>
+                  <div class='benchmark-bar' style='width:79%'>
+                    &nbsp;
+                  </div>
+                </td>
+              </tr>
+              <tr class=''>
+                <td class='name'>
+                  <div class='device-icon intel'></div>
+                  <a href='/processors/intel-core-i3-14100f'>Intel Core i3-14100F</a>
+                  <div class='description'>
+                    3.5 GHz (4 cores)
+                  </div>
+                </td>
+                <td class='score'>2465</td>
+                <td class='graph'>
+                  <div class='benchmark-bar' style='width:79%'>
+                    &nbsp;
+                  </div>
+                </td>
+              </tr>
+              <tr class=''>
+                <td class='name'>
+                  <div class='device-icon intel'></div>
+                  <a href='/processors/intel-core-i7-13700t'>Intel Core i7-13700T</a>
+                  <div class='description'>
+                    1.4 GHz (16 cores)
+                  </div>
+                </td>
+                <td class='score'>2445</td>
+                <td class='graph'>
+                  <div class='benchmark-bar' style='width:78%'>
+                    &nbsp;
+                  </div>
+                </td>
+              </tr>
+              <tr class=''>
+                <td class='name'>
+                  <div class='device-icon intel'></div>
+                  <a href='/processors/intel-core-i5-14400'>Intel Core i5-14400</a>
+                  <div class='description'>
+                    2.5 GHz (10 cores)
+                  </div>
+                </td>
+                <td class='score'>2441</td>
+                <td class='graph'>
+                  <div class='benchmark-bar' style='width:78%'>
+                    &nbsp;
+                  </div>
+                </td>
+              </tr>
+              <tr class=''>
+                <td class='name'>
+                  <div class='device-icon intel'></div>
+                  <a href='/processors/intel-core-i5-13600'>Intel Core i5-13600</a>
+                  <div class='description'>
+                    2.7 GHz (14 cores)
+                  </div>
+                </td>
+                <td class='score'>2435</td>
+                <td class='graph'>
+                  <div class='benchmark-bar' style='width:78%'>
+                    &nbsp;
+                  </div>
+                </td>
+              </tr>
+              <tr class=''>
+                <td class='name'>
+                  <div class='device-icon intel'></div>
+                  <a href='/processors/intel-core-i5-13500'>Intel Core i5-13500</a>
+                  <div class='description'>
+                    2.5 GHz (14 cores)
+                  </div>
+                </td>
+                <td class='score'>2403</td>
+                <td class='graph'>
+                  <div class='benchmark-bar' style='width:77%'>
+                    &nbsp;
+                  </div>
+                </td>
+              </tr>
+              <tr class=''>
+                <td class='name'>
+                  <div class='device-icon intel'></div>
+                  <a href='/processors/intel-core-i5-13600t'>Intel Core i5-13600T</a>
+                  <div class='description'>
+                    1.8 GHz (14 cores)
+                  </div>
+                </td>
+                <td class='score'>2369</td>
+                <td class='graph'>
+                  <div class='benchmark-bar' style='width:76%'>
+                    &nbsp;
+                  </div>
+                </td>
+              </tr>
+              <tr class=''>
+                <td class='name'>
+                  <div class='device-icon intel'></div>
+                  <a href='/processors/intel-core-i5-14400f'>Intel Core i5-14400F</a>
+                  <div class='description'>
+                    2.5 GHz (10 cores)
+                  </div>
+                </td>
+                <td class='score'>2366</td>
+                <td class='graph'>
+                  <div class='benchmark-bar' style='width:76%'>
+                    &nbsp;
+                  </div>
+                </td>
+              </tr>
+              <tr class=''>
+                <td class='name'>
+                  <div class='device-icon intel'></div>
+                  <a href='/processors/intel-core-i5-14500t'>Intel Core i5-14500T</a>
+                  <div class='description'>
+                    1.7 GHz (14 cores)
+                  </div>
+                </td>
+                <td class='score'>2359</td>
+                <td class='graph'>
+                  <div class='benchmark-bar' style='width:75%'>
+                    &nbsp;
+                  </div>
+                </td>
+              </tr>
+              <tr class=''>
+                <td class='name'>
+                  <div class='device-icon intel'></div>
+                  <a href='/processors/intel-core-i5-14500hx'>Intel Core i5-14500HX</a>
+                  <div class='description'>
+                    2.6 GHz (14 cores)
+                  </div>
+                </td>
+                <td class='score'>2357</td>
+                <td class='graph'>
+                  <div class='benchmark-bar' style='width:75%'>
+                    &nbsp;
+                  </div>
+                </td>
+              </tr>
+              <tr class=''>
+                <td class='name'>
+                  <div class='device-icon intel'></div>
+                  <a href='/processors/intel-core-i5-13400f'>Intel Core i5-13400F</a>
+                  <div class='description'>
+                    2.5 GHz (10 cores)
+                  </div>
+                </td>
+                <td class='score'>2289</td>
+                <td class='graph'>
+                  <div class='benchmark-bar' style='width:73%'>
+                    &nbsp;
+                  </div>
+                </td>
+              </tr>
+              <tr class=''>
+                <td class='name'>
+                  <div class='device-icon intel'></div>
+                  <a href='/processors/intel-core-i5-13400'>Intel Core i5-13400</a>
+                  <div class='description'>
+                    2.5 GHz (10 cores)
+                  </div>
+                </td>
+                <td class='score'>2285</td>
+                <td class='graph'>
+                  <div class='benchmark-bar' style='width:73%'>
+                    &nbsp;
+                  </div>
+                </td>
+              </tr>
+              <tr class=''>
+                <td class='name'>
+                  <div class='device-icon intel'></div>
+                  <a href='/processors/intel-core-i5-13500t'>Intel Core i5-13500T</a>
+                  <div class='description'>
+                    1.6 GHz (14 cores)
+                  </div>
+                </td>
+                <td class='score'>2280</td>
+                <td class='graph'>
+                  <div class='benchmark-bar' style='width:73%'>
+                    &nbsp;
+                  </div>
+                </td>
+              </tr>
+              <tr class=''>
+                <td class='name'>
+                  <div class='device-icon intel'></div>
+                  <a href='/processors/intel-core-i7-13700e'>Intel Core i7-13700E</a>
+                  <div class='description'>
+                    1.9 GHz (16 cores)
+                  </div>
+                </td>
+                <td class='score'>2279</td>
+                <td class='graph'>
+                  <div class='benchmark-bar' style='width:73%'>
+                    &nbsp;
+                  </div>
+                </td>
+              </tr>
+              <tr class=''>
+                <td class='name'>
+                  <div class='device-icon intel'></div>
+                  <a href='/processors/intel-core-i3-13100f'>Intel Core i3-13100F</a>
+                  <div class='description'>
+                    3.4 GHz (4 cores)
+                  </div>
+                </td>
+                <td class='score'>2277</td>
+                <td class='graph'>
+                  <div class='benchmark-bar' style='width:73%'>
+                    &nbsp;
+                  </div>
+                </td>
+              </tr>
+              <tr class=''>
+                <td class='name'>
+                  <div class='device-icon intel'></div>
+                  <a href='/processors/intel-core-7-150u'>Intel Core 7 150U</a>
+                  <div class='description'>
+                    1.8 GHz (10 cores)
+                  </div>
+                </td>
+                <td class='score'>2273</td>
+                <td class='graph'>
+                  <div class='benchmark-bar' style='width:73%'>
+                    &nbsp;
+                  </div>
+                </td>
+              </tr>
+              <tr class=''>
+                <td class='name'>
+                  <div class='device-icon intel'></div>
+                  <a href='/processors/intel-core-i3-13100'>Intel Core i3-13100</a>
+                  <div class='description'>
+                    3.4 GHz (4 cores)
+                  </div>
+                </td>
+                <td class='score'>2254</td>
+                <td class='graph'>
+                  <div class='benchmark-bar' style='width:72%'>
+                    &nbsp;
+                  </div>
+                </td>
+              </tr>
+              <tr class=''>
+                <td class='name'>
+                  <div class='device-icon intel'></div>
+                  <a href='/processors/intel-core-i3-14100'>Intel Core i3-14100</a>
+                  <div class='description'>
+                    3.5 GHz (4 cores)
+                  </div>
+                </td>
+                <td class='score'>2229</td>
+                <td class='graph'>
+                  <div class='benchmark-bar' style='width:71%'>
+                    &nbsp;
+                  </div>
+                </td>
+              </tr>
+              <tr class=''>
+                <td class='name'>
+                  <div class='device-icon intel'></div>
+                  <a href='/processors/intel-core-i5-13400t'>Intel Core i5-13400T</a>
+                  <div class='description'>
+                    1.3 GHz (10 cores)
+                  </div>
+                </td>
+                <td class='score'>2188</td>
+                <td class='graph'>
+                  <div class='benchmark-bar' style='width:70%'>
+                    &nbsp;
+                  </div>
+                </td>
+              </tr>
+              <tr class=''>
+                <td class='name'>
+                  <div class='device-icon intel'></div>
+                  <a href='/processors/intel-core-i7-13700te'>Intel Core i7-13700TE</a>
+                  <div class='description'>
+                    1.1 GHz (16 cores)
+                  </div>
+                </td>
+                <td class='score'>2078</td>
+                <td class='graph'>
+                  <div class='benchmark-bar' style='width:66%'>
+                    &nbsp;
+                  </div>
+                </td>
+              </tr>
+              <tr class=''>
+                <td class='name'>
+                  <div class='device-icon intel'></div>
+                  <a href='/processors/intel-core-i9-13900te'>Intel Core i9-13900TE</a>
+                  <div class='description'>
+                    1.0 GHz (24 cores)
+                  </div>
+                </td>
+                <td class='score'>2068</td>
+                <td class='graph'>
+                  <div class='benchmark-bar' style='width:66%'>
+                    &nbsp;
+                  </div>
+                </td>
+              </tr>
+              <tr class=''>
+                <td class='name'>
+                  <div class='device-icon intel'></div>
+                  <a href='/processors/intel-core-i3-13100e'>Intel Core i3-13100E</a>
+                  <div class='description'>
+                    3.3 GHz (4 cores)
+                  </div>
+                </td>
+                <td class='score'>1975</td>
+                <td class='graph'>
+                  <div class='benchmark-bar' style='width:63%'>
+                    &nbsp;
+                  </div>
+                </td>
+              </tr>
+              <tr class=''>
+                <td class='name'>
+                  <div class='device-icon intel'></div>
+                  <a href='/processors/intel-core-i5-13500te'>Intel Core i5-13500TE</a>
+                  <div class='description'>
+                    1.3 GHz (14 cores)
+                  </div>
+                </td>
+                <td class='score'>1816</td>
+                <td class='graph'>
+                  <div class='benchmark-bar' style='width:58%'>
+                    &nbsp;
+                  </div>
+                </td>
+              </tr>
+              <tr class=''>
+                <td class='name'>
+                  <div class='device-icon intel'></div>
+                  <a href='/processors/intel-core-i5-13500e'>Intel Core i5-13500E</a>
+                  <div class='description'>
+                    2.4 GHz (14 cores)
+                  </div>
+                </td>
+                <td class='score'>1776</td>
+                <td class='graph'>
+                  <div class='benchmark-bar' style='width:57%'>
+                    &nbsp;
+                  </div>
+                </td>
+              </tr>
+              <tr class=''>
+                <td class='name'>
+                  <div class='device-icon intel'></div>
+                  <a href='/processors/intel-core-i3-13100te'>Intel Core i3-13100TE</a>
+                  <div class='description'>
+                    2.4 GHz (4 cores)
+                  </div>
+                </td>
+                <td class='score'>1770</td>
+                <td class='graph'>
+                  <div class='benchmark-bar' style='width:56%'>
+                    &nbsp;
+                  </div>
+                </td>
+              </tr>
+              <tr class=''>
+                <td class='name'>
+                  <div class='device-icon intel'></div>
+                  <a href='/processors/intel-core-i3-13100t'>Intel Core i3-13100T</a>
+                  <div class='description'>
+                    2.5 GHz (4 cores)
+                  </div>
+                </td>
+                <td class='score'>1713</td>
+                <td class='graph'>
+                  <div class='benchmark-bar' style='width:55%'>
+                    &nbsp;
+                  </div>
+                </td>
+              </tr>
+              <tr class=''>
+                <td class='name'>
+                  <div class='device-icon intel'></div>
+                  <a href='/processors/intel-core-i9-13900e'>Intel Core i9-13900E</a>
+                  <div class='description'>
+                    1.8 GHz (24 cores)
+                  </div>
+                </td>
+                <td class='score'>1544</td>
+                <td class='graph'>
+                  <div class='benchmark-bar' style='width:49%'>
+                    &nbsp;
+                  </div>
+                </td>
+              </tr>
+              <tr class=''>
+                <td class='name'>
+                  <div class='device-icon intel'></div>
+                  <a href='/processors/intel-core-i5-13400e'>Intel Core i5-13400E</a>
+                  <div class='description'>
+                    2.4 GHz (10 cores)
+                  </div>
+                </td>
+                <td class='score'>1325</td>
+                <td class='graph'>
+                  <div class='benchmark-bar' style='width:42%'>
+                    &nbsp;
+                  </div>
+                </td>
+              </tr>
+              </tbody>
+            </table>
+          </div>
+
+        </div>
+        <div class='table-responsive tab-pane' id='family-64-multi'>
+          <div class='table-wrapper'>
+            <table class='table benchmark-chart-table'>
+              <thead>
+              <tr class='stacked-heading'>
+                <th class='name'>Processor</th>
+                <th class='score'>Score</th>
+                <th class='graph'></th>
+              </tr>
+              </thead>
+              <tbody>
+              <tr class=''>
+                <td class='name'>
+                  <div class='device-icon intel'></div>
+                  <a href='/processors/intel-core-i9-13900ks'>Intel Core i9-13900KS</a>
+                  <div class='description'>
+                    3.2 GHz (24 cores)
+                  </div>
+                </td>
+                <td class='score'>21843</td>
+                <td class='graph'>
+                  <div class='benchmark-bar' style='width:100%'>
+                    &nbsp;
+                  </div>
+                </td>
+              </tr>
+              <tr class=''>
+                <td class='name'>
+                  <div class='device-icon intel'></div>
+                  <a href='/processors/intel-core-i9-14900k'>Intel Core i9-14900K</a>
+                  <div class='description'>
+                    3.2 GHz (24 cores)
+                  </div>
+                </td>
+                <td class='score'>20993</td>
+                <td class='graph'>
+                  <div class='benchmark-bar' style='width:96%'>
+                    &nbsp;
+                  </div>
+                </td>
+              </tr>
+              <tr class=''>
+                <td class='name'>
+                  <div class='device-icon intel'></div>
+                  <a href='/processors/intel-core-i9-14900kf'>Intel Core i9-14900KF</a>
+                  <div class='description'>
+                    3.2 GHz (24 cores)
+                  </div>
+                </td>
+                <td class='score'>20962</td>
+                <td class='graph'>
+                  <div class='benchmark-bar' style='width:95%'>
+                    &nbsp;
+                  </div>
+                </td>
+              </tr>
+              <tr class=''>
+                <td class='name'>
+                  <div class='device-icon intel'></div>
+                  <a href='/processors/intel-core-i9-13900k'>Intel Core i9-13900K</a>
+                  <div class='description'>
+                    3.0 GHz (24 cores)
+                  </div>
+                </td>
+                <td class='score'>20196</td>
+                <td class='graph'>
+                  <div class='benchmark-bar' style='width:92%'>
+                    &nbsp;
+                  </div>
+                </td>
+              </tr>
+              <tr class=''>
+                <td class='name'>
+                  <div class='device-icon intel'></div>
+                  <a href='/processors/intel-core-i9-13900kf'>Intel Core i9-13900KF</a>
+                  <div class='description'>
+                    3.0 GHz (24 cores)
+                  </div>
+                </td>
+                <td class='score'>20044</td>
+                <td class='graph'>
+                  <div class='benchmark-bar' style='width:91%'>
+                    &nbsp;
+                  </div>
+                </td>
+              </tr>
+              <tr class=''>
+                <td class='name'>
+                  <div class='device-icon intel'></div>
+                  <a href='/processors/intel-core-i7-14700kf'>Intel Core i7-14700KF</a>
+                  <div class='description'>
+                    3.4 GHz (20 cores)
+                  </div>
+                </td>
+                <td class='score'>19429</td>
+                <td class='graph'>
+                  <div class='benchmark-bar' style='width:88%'>
+                    &nbsp;
+                  </div>
+                </td>
+              </tr>
+              <tr class=''>
+                <td class='name'>
+                  <div class='device-icon intel'></div>
+                  <a href='/processors/intel-core-i7-14700k'>Intel Core i7-14700K</a>
+                  <div class='description'>
+                    3.4 GHz (20 cores)
+                  </div>
+                </td>
+                <td class='score'>19306</td>
+                <td class='graph'>
+                  <div class='benchmark-bar' style='width:88%'>
+                    &nbsp;
+                  </div>
+                </td>
+              </tr>
+              <tr class=''>
+                <td class='name'>
+                  <div class='device-icon intel'></div>
+                  <a href='/processors/intel-core-i9-14900f'>Intel Core i9-14900F</a>
+                  <div class='description'>
+                    2.0 GHz (24 cores)
+                  </div>
+                </td>
+                <td class='score'>18517</td>
+                <td class='graph'>
+                  <div class='benchmark-bar' style='width:84%'>
+                    &nbsp;
+                  </div>
+                </td>
+              </tr>
+              <tr class=''>
+                <td class='name'>
+                  <div class='device-icon intel'></div>
+                  <a href='/processors/intel-core-i9-14900'>Intel Core i9-14900</a>
+                  <div class='description'>
+                    2.0 GHz (24 cores)
+                  </div>
+                </td>
+                <td class='score'>18217</td>
+                <td class='graph'>
+                  <div class='benchmark-bar' style='width:83%'>
+                    &nbsp;
+                  </div>
+                </td>
+              </tr>
+              <tr class=''>
+                <td class='name'>
+                  <div class='device-icon intel'></div>
+                  <a href='/processors/intel-core-i7-13700k'>Intel Core i7-13700K</a>
+                  <div class='description'>
+                    3.4 GHz (16 cores)
+                  </div>
+                </td>
+                <td class='score'>17641</td>
+                <td class='graph'>
+                  <div class='benchmark-bar' style='width:80%'>
+                    &nbsp;
+                  </div>
+                </td>
+              </tr>
+              <tr class=''>
+                <td class='name'>
+                  <div class='device-icon intel'></div>
+                  <a href='/processors/intel-core-i7-13700kf'>Intel Core i7-13700KF</a>
+                  <div class='description'>
+                    3.4 GHz (16 cores)
+                  </div>
+                </td>
+                <td class='score'>17610</td>
+                <td class='graph'>
+                  <div class='benchmark-bar' style='width:80%'>
+                    &nbsp;
+                  </div>
+                </td>
+              </tr>
+              <tr class=''>
+                <td class='name'>
+                  <div class='device-icon intel'></div>
+                  <a href='/processors/intel-core-i9-13900f'>Intel Core i9-13900F</a>
+                  <div class='description'>
+                    2.0 GHz (24 cores)
+                  </div>
+                </td>
+                <td class='score'>17321</td>
+                <td class='graph'>
+                  <div class='benchmark-bar' style='width:79%'>
+                    &nbsp;
+                  </div>
+                </td>
+              </tr>
+              <tr class=''>
+                <td class='name'>
+                  <div class='device-icon intel'></div>
+                  <a href='/processors/intel-core-i7-14700f'>Intel Core i7-14700F</a>
+                  <div class='description'>
+                    2.1 GHz (20 cores)
+                  </div>
+                </td>
+                <td class='score'>16880</td>
+                <td class='graph'>
+                  <div class='benchmark-bar' style='width:77%'>
+                    &nbsp;
+                  </div>
+                </td>
+              </tr>
+              <tr class=''>
+                <td class='name'>
+                  <div class='device-icon intel'></div>
+                  <a href='/processors/intel-core-i7-14700'>Intel Core i7-14700</a>
+                  <div class='description'>
+                    2.1 GHz (20 cores)
+                  </div>
+                </td>
+                <td class='score'>16653</td>
+                <td class='graph'>
+                  <div class='benchmark-bar' style='width:76%'>
+                    &nbsp;
+                  </div>
+                </td>
+              </tr>
+              <tr class='current-device'>
+                <td class='name'>
+                  <div class='device-icon intel'></div>
+                  <a href='/processors/intel-core-i9-13900'>Intel Core i9-13900</a>
+                  <div class='description'>
+                    2.0 GHz (24 cores)
+                  </div>
+                </td>
+                <td class='score'>16413</td>
+                <td class='graph'>
+                  <div class='benchmark-bar' style='width:75%'>
+                    &nbsp;
+                  </div>
+                </td>
+              </tr>
+              <tr class=''>
+                <td class='name'>
+                  <div class='device-icon intel'></div>
+                  <a href='/processors/intel-core-i9-14900hx'>Intel Core i9-14900HX</a>
+                  <div class='description'>
+                    2.2 GHz (24 cores)
+                  </div>
+                </td>
+                <td class='score'>16273</td>
+                <td class='graph'>
+                  <div class='benchmark-bar' style='width:74%'>
+                    &nbsp;
+                  </div>
+                </td>
+              </tr>
+              <tr class=''>
+                <td class='name'>
+                  <div class='device-icon intel'></div>
+                  <a href='/processors/intel-core-i5-14600k'>Intel Core i5-14600K</a>
+                  <div class='description'>
+                    3.5 GHz (14 cores)
+                  </div>
+                </td>
+                <td class='score'>15864</td>
+                <td class='graph'>
+                  <div class='benchmark-bar' style='width:72%'>
+                    &nbsp;
+                  </div>
+                </td>
+              </tr>
+              <tr class=''>
+                <td class='name'>
+                  <div class='device-icon intel'></div>
+                  <a href='/processors/intel-core-i5-14600kf'>Intel Core i5-14600KF</a>
+                  <div class='description'>
+                    3.5 GHz (14 cores)
+                  </div>
+                </td>
+                <td class='score'>15574</td>
+                <td class='graph'>
+                  <div class='benchmark-bar' style='width:71%'>
+                    &nbsp;
+                  </div>
+                </td>
+              </tr>
+              <tr class=''>
+                <td class='name'>
+                  <div class='device-icon intel'></div>
+                  <a href='/processors/intel-core-i7-13700f'>Intel Core i7-13700F</a>
+                  <div class='description'>
+                    2.1 GHz (16 cores)
+                  </div>
+                </td>
+                <td class='score'>15439</td>
+                <td class='graph'>
+                  <div class='benchmark-bar' style='width:70%'>
+                    &nbsp;
+                  </div>
+                </td>
+              </tr>
+              <tr class=''>
+                <td class='name'>
+                  <div class='device-icon intel'></div>
+                  <a href='/processors/intel-core-i5-13600kf'>Intel Core i5-13600KF</a>
+                  <div class='description'>
+                    3.5 GHz (14 cores)
+                  </div>
+                </td>
+                <td class='score'>15421</td>
+                <td class='graph'>
+                  <div class='benchmark-bar' style='width:70%'>
+                    &nbsp;
+                  </div>
+                </td>
+              </tr>
+              <tr class=''>
+                <td class='name'>
+                  <div class='device-icon intel'></div>
+                  <a href='/processors/intel-core-i9-13900te'>Intel Core i9-13900TE</a>
+                  <div class='description'>
+                    1.0 GHz (24 cores)
+                  </div>
+                </td>
+                <td class='score'>15187</td>
+                <td class='graph'>
+                  <div class='benchmark-bar' style='width:69%'>
+                    &nbsp;
+                  </div>
+                </td>
+              </tr>
+              <tr class=''>
+                <td class='name'>
+                  <div class='device-icon intel'></div>
+                  <a href='/processors/intel-core-i5-13600k'>Intel Core i5-13600K</a>
+                  <div class='description'>
+                    3.5 GHz (14 cores)
+                  </div>
+                </td>
+                <td class='score'>14853</td>
+                <td class='graph'>
+                  <div class='benchmark-bar' style='width:67%'>
+                    &nbsp;
+                  </div>
+                </td>
+              </tr>
+              <tr class=''>
+                <td class='name'>
+                  <div class='device-icon intel'></div>
+                  <a href='/processors/intel-core-i7-13700'>Intel Core i7-13700</a>
+                  <div class='description'>
+                    2.1 GHz (16 cores)
+                  </div>
+                </td>
+                <td class='score'>14789</td>
+                <td class='graph'>
+                  <div class='benchmark-bar' style='width:67%'>
+                    &nbsp;
+                  </div>
+                </td>
+              </tr>
+              <tr class=''>
+                <td class='name'>
+                  <div class='device-icon intel'></div>
+                  <a href='/processors/intel-core-i5-14600t'>Intel Core i5-14600T</a>
+                  <div class='description'>
+                    1.8 GHz (14 cores)
+                  </div>
+                </td>
+                <td class='score'>14541</td>
+                <td class='graph'>
+                  <div class='benchmark-bar' style='width:66%'>
+                    &nbsp;
+                  </div>
+                </td>
+              </tr>
+              <tr class=''>
+                <td class='name'>
+                  <div class='device-icon intel'></div>
+                  <a href='/processors/intel-core-i7-1370pe'>Intel Core i7-1370PE</a>
+                  <div class='description'>
+                    1.9 GHz (14 cores)
+                  </div>
+                </td>
+                <td class='score'>13932</td>
+                <td class='graph'>
+                  <div class='benchmark-bar' style='width:63%'>
+                    &nbsp;
+                  </div>
+                </td>
+              </tr>
+              <tr class=''>
+                <td class='name'>
+                  <div class='device-icon intel'></div>
+                  <a href='/processors/intel-core-i5-14500hx'>Intel Core i5-14500HX</a>
+                  <div class='description'>
+                    2.6 GHz (14 cores)
+                  </div>
+                </td>
+                <td class='score'>13745</td>
+                <td class='graph'>
+                  <div class='benchmark-bar' style='width:62%'>
+                    &nbsp;
+                  </div>
+                </td>
+              </tr>
+              <tr class=''>
+                <td class='name'>
+                  <div class='device-icon intel'></div>
+                  <a href='/processors/intel-core-i7-14650hx'>Intel Core i7-14650HX</a>
+                  <div class='description'>
+                    2.2 GHz (16 cores)
+                  </div>
+                </td>
+                <td class='score'>13730</td>
+                <td class='graph'>
+                  <div class='benchmark-bar' style='width:62%'>
+                    &nbsp;
+                  </div>
+                </td>
+              </tr>
+              <tr class=''>
+                <td class='name'>
+                  <div class='device-icon intel'></div>
+                  <a href='/processors/intel-core-i7-14700hx'>Intel Core i7-14700HX</a>
+                  <div class='description'>
+                    2.1 GHz (20 cores)
+                  </div>
+                </td>
+                <td class='score'>13437</td>
+                <td class='graph'>
+                  <div class='benchmark-bar' style='width:61%'>
+                    &nbsp;
+                  </div>
+                </td>
+              </tr>
+              <tr class=''>
+                <td class='name'>
+                  <div class='device-icon intel'></div>
+                  <a href='/processors/intel-core-i5-14600'>Intel Core i5-14600</a>
+                  <div class='description'>
+                    2.7 GHz (14 cores)
+                  </div>
+                </td>
+                <td class='score'>13339</td>
+                <td class='graph'>
+                  <div class='benchmark-bar' style='width:61%'>
+                    &nbsp;
+                  </div>
+                </td>
+              </tr>
+              <tr class=''>
+                <td class='name'>
+                  <div class='device-icon intel'></div>
+                  <a href='/processors/intel-core-i5-14500'>Intel Core i5-14500</a>
+                  <div class='description'>
+                    2.6 GHz (14 cores)
+                  </div>
+                </td>
+                <td class='score'>13183</td>
+                <td class='graph'>
+                  <div class='benchmark-bar' style='width:60%'>
+                    &nbsp;
+                  </div>
+                </td>
+              </tr>
+              <tr class=''>
+                <td class='name'>
+                  <div class='device-icon intel'></div>
+                  <a href='/processors/intel-core-i5-13600'>Intel Core i5-13600</a>
+                  <div class='description'>
+                    2.7 GHz (14 cores)
+                  </div>
+                </td>
+                <td class='score'>12376</td>
+                <td class='graph'>
+                  <div class='benchmark-bar' style='width:56%'>
+                    &nbsp;
+                  </div>
+                </td>
+              </tr>
+              <tr class=''>
+                <td class='name'>
+                  <div class='device-icon intel'></div>
+                  <a href='/processors/intel-core-i5-13500'>Intel Core i5-13500</a>
+                  <div class='description'>
+                    2.5 GHz (14 cores)
+                  </div>
+                </td>
+                <td class='score'>12313</td>
+                <td class='graph'>
+                  <div class='benchmark-bar' style='width:56%'>
+                    &nbsp;
+                  </div>
+                </td>
+              </tr>
+              <tr class=''>
+                <td class='name'>
+                  <div class='device-icon intel'></div>
+                  <a href='/processors/intel-core-i5-13600t'>Intel Core i5-13600T</a>
+                  <div class='description'>
+                    1.8 GHz (14 cores)
+                  </div>
+                </td>
+                <td class='score'>12214</td>
+                <td class='graph'>
+                  <div class='benchmark-bar' style='width:55%'>
+                    &nbsp;
+                  </div>
+                </td>
+              </tr>
+              <tr class=''>
+                <td class='name'>
+                  <div class='device-icon intel'></div>
+                  <a href='/processors/intel-core-i7-13700t'>Intel Core i7-13700T</a>
+                  <div class='description'>
+                    1.4 GHz (16 cores)
+                  </div>
+                </td>
+                <td class='score'>11632</td>
+                <td class='graph'>
+                  <div class='benchmark-bar' style='width:53%'>
+                    &nbsp;
+                  </div>
+                </td>
+              </tr>
+              <tr class=''>
+                <td class='name'>
+                  <div class='device-icon intel'></div>
+                  <a href='/processors/intel-core-i5-14400'>Intel Core i5-14400</a>
+                  <div class='description'>
+                    2.5 GHz (10 cores)
+                  </div>
+                </td>
+                <td class='score'>11621</td>
+                <td class='graph'>
+                  <div class='benchmark-bar' style='width:53%'>
+                    &nbsp;
+                  </div>
+                </td>
+              </tr>
+              <tr class=''>
+                <td class='name'>
+                  <div class='device-icon intel'></div>
+                  <a href='/processors/intel-core-i5-14400f'>Intel Core i5-14400F</a>
+                  <div class='description'>
+                    2.5 GHz (10 cores)
+                  </div>
+                </td>
+                <td class='score'>11564</td>
+                <td class='graph'>
+                  <div class='benchmark-bar' style='width:52%'>
+                    &nbsp;
+                  </div>
+                </td>
+              </tr>
+              <tr class=''>
+                <td class='name'>
+                  <div class='device-icon intel'></div>
+                  <a href='/processors/intel-core-i5-13500te'>Intel Core i5-13500TE</a>
+                  <div class='description'>
+                    1.3 GHz (14 cores)
+                  </div>
+                </td>
+                <td class='score'>11079</td>
+                <td class='graph'>
+                  <div class='benchmark-bar' style='width:50%'>
+                    &nbsp;
+                  </div>
+                </td>
+              </tr>
+              <tr class=''>
+                <td class='name'>
+                  <div class='device-icon intel'></div>
+                  <a href='/processors/intel-core-i5-13400f'>Intel Core i5-13400F</a>
+                  <div class='description'>
+                    2.5 GHz (10 cores)
+                  </div>
+                </td>
+                <td class='score'>10771</td>
+                <td class='graph'>
+                  <div class='benchmark-bar' style='width:49%'>
+                    &nbsp;
+                  </div>
+                </td>
+              </tr>
+              <tr class=''>
+                <td class='name'>
+                  <div class='device-icon intel'></div>
+                  <a href='/processors/intel-core-i5-13500e'>Intel Core i5-13500E</a>
+                  <div class='description'>
+                    2.4 GHz (14 cores)
+                  </div>
+                </td>
+                <td class='score'>10592</td>
+                <td class='graph'>
+                  <div class='benchmark-bar' style='width:48%'>
+                    &nbsp;
+                  </div>
+                </td>
+              </tr>
+              <tr class=''>
+                <td class='name'>
+                  <div class='device-icon intel'></div>
+                  <a href='/processors/intel-core-i5-14500t'>Intel Core i5-14500T</a>
+                  <div class='description'>
+                    1.7 GHz (14 cores)
+                  </div>
+                </td>
+                <td class='score'>10446</td>
+                <td class='graph'>
+                  <div class='benchmark-bar' style='width:47%'>
+                    &nbsp;
+                  </div>
+                </td>
+              </tr>
+              <tr class=''>
+                <td class='name'>
+                  <div class='device-icon intel'></div>
+                  <a href='/processors/intel-core-i5-13400'>Intel Core i5-13400</a>
+                  <div class='description'>
+                    2.5 GHz (10 cores)
+                  </div>
+                </td>
+                <td class='score'>10276</td>
+                <td class='graph'>
+                  <div class='benchmark-bar' style='width:47%'>
+                    &nbsp;
+                  </div>
+                </td>
+              </tr>
+              <tr class=''>
+                <td class='name'>
+                  <div class='device-icon intel'></div>
+                  <a href='/processors/intel-core-i5-13500t'>Intel Core i5-13500T</a>
+                  <div class='description'>
+                    1.6 GHz (14 cores)
+                  </div>
+                </td>
+                <td class='score'>9399</td>
+                <td class='graph'>
+                  <div class='benchmark-bar' style='width:43%'>
+                    &nbsp;
+                  </div>
+                </td>
+              </tr>
+              <tr class=''>
+                <td class='name'>
+                  <div class='device-icon intel'></div>
+                  <a href='/processors/intel-core-i7-13700e'>Intel Core i7-13700E</a>
+                  <div class='description'>
+                    1.9 GHz (16 cores)
+                  </div>
+                </td>
+                <td class='score'>9313</td>
+                <td class='graph'>
+                  <div class='benchmark-bar' style='width:42%'>
+                    &nbsp;
+                  </div>
+                </td>
+              </tr>
+              <tr class=''>
+                <td class='name'>
+                  <div class='device-icon intel'></div>
+                  <a href='/processors/intel-core-i9-13900e'>Intel Core i9-13900E</a>
+                  <div class='description'>
+                    1.8 GHz (24 cores)
+                  </div>
+                </td>
+                <td class='score'>8973</td>
+                <td class='graph'>
+                  <div class='benchmark-bar' style='width:41%'>
+                    &nbsp;
+                  </div>
+                </td>
+              </tr>
+              <tr class=''>
+                <td class='name'>
+                  <div class='device-icon intel'></div>
+                  <a href='/processors/intel-core-i5-13400e'>Intel Core i5-13400E</a>
+                  <div class='description'>
+                    2.4 GHz (10 cores)
+                  </div>
+                </td>
+                <td class='score'>8823</td>
+                <td class='graph'>
+                  <div class='benchmark-bar' style='width:40%'>
+                    &nbsp;
+                  </div>
+                </td>
+              </tr>
+              <tr class=''>
+                <td class='name'>
+                  <div class='device-icon intel'></div>
+                  <a href='/processors/intel-core-i5-13400t'>Intel Core i5-13400T</a>
+                  <div class='description'>
+                    1.3 GHz (10 cores)
+                  </div>
+                </td>
+                <td class='score'>8755</td>
+                <td class='graph'>
+                  <div class='benchmark-bar' style='width:40%'>
+                    &nbsp;
+                  </div>
+                </td>
+              </tr>
+              <tr class=''>
+                <td class='name'>
+                  <div class='device-icon intel'></div>
+                  <a href='/processors/intel-core-i7-13700te'>Intel Core i7-13700TE</a>
+                  <div class='description'>
+                    1.1 GHz (16 cores)
+                  </div>
+                </td>
+                <td class='score'>8463</td>
+                <td class='graph'>
+                  <div class='benchmark-bar' style='width:38%'>
+                    &nbsp;
+                  </div>
+                </td>
+              </tr>
+              <tr class=''>
+                <td class='name'>
+                  <div class='device-icon intel'></div>
+                  <a href='/processors/intel-core-i3-14100f'>Intel Core i3-14100F</a>
+                  <div class='description'>
+                    3.5 GHz (4 cores)
+                  </div>
+                </td>
+                <td class='score'>8237</td>
+                <td class='graph'>
+                  <div class='benchmark-bar' style='width:37%'>
+                    &nbsp;
+                  </div>
+                </td>
+              </tr>
+              <tr class=''>
+                <td class='name'>
+                  <div class='device-icon intel'></div>
+                  <a href='/processors/intel-core-7-150u'>Intel Core 7 150U</a>
+                  <div class='description'>
+                    1.8 GHz (10 cores)
+                  </div>
+                </td>
+                <td class='score'>7828</td>
+                <td class='graph'>
+                  <div class='benchmark-bar' style='width:35%'>
+                    &nbsp;
+                  </div>
+                </td>
+              </tr>
+              <tr class=''>
+                <td class='name'>
+                  <div class='device-icon intel'></div>
+                  <a href='/processors/intel-core-i3-13100f'>Intel Core i3-13100F</a>
+                  <div class='description'>
+                    3.4 GHz (4 cores)
+                  </div>
+                </td>
+                <td class='score'>7733</td>
+                <td class='graph'>
+                  <div class='benchmark-bar' style='width:35%'>
+                    &nbsp;
+                  </div>
+                </td>
+              </tr>
+              <tr class=''>
+                <td class='name'>
+                  <div class='device-icon intel'></div>
+                  <a href='/processors/intel-core-i3-14100'>Intel Core i3-14100</a>
+                  <div class='description'>
+                    3.5 GHz (4 cores)
+                  </div>
+                </td>
+                <td class='score'>7385</td>
+                <td class='graph'>
+                  <div class='benchmark-bar' style='width:33%'>
+                    &nbsp;
+                  </div>
+                </td>
+              </tr>
+              <tr class=''>
+                <td class='name'>
+                  <div class='device-icon intel'></div>
+                  <a href='/processors/intel-core-i3-13100'>Intel Core i3-13100</a>
+                  <div class='description'>
+                    3.4 GHz (4 cores)
+                  </div>
+                </td>
+                <td class='score'>7347</td>
+                <td class='graph'>
+                  <div class='benchmark-bar' style='width:33%'>
+                    &nbsp;
+                  </div>
+                </td>
+              </tr>
+              <tr class=''>
+                <td class='name'>
+                  <div class='device-icon intel'></div>
+                  <a href='/processors/intel-core-i3-13100e'>Intel Core i3-13100E</a>
+                  <div class='description'>
+                    3.3 GHz (4 cores)
+                  </div>
+                </td>
+                <td class='score'>7109</td>
+                <td class='graph'>
+                  <div class='benchmark-bar' style='width:32%'>
+                    &nbsp;
+                  </div>
+                </td>
+              </tr>
+              <tr class=''>
+                <td class='name'>
+                  <div class='device-icon intel'></div>
+                  <a href='/processors/intel-core-i3-13100te'>Intel Core i3-13100TE</a>
+                  <div class='description'>
+                    2.4 GHz (4 cores)
+                  </div>
+                </td>
+                <td class='score'>6135</td>
+                <td class='graph'>
+                  <div class='benchmark-bar' style='width:28%'>
+                    &nbsp;
+                  </div>
+                </td>
+              </tr>
+              <tr class=''>
+                <td class='name'>
+                  <div class='device-icon intel'></div>
+                  <a href='/processors/intel-core-i3-13100t'>Intel Core i3-13100T</a>
+                  <div class='description'>
+                    2.5 GHz (4 cores)
+                  </div>
+                </td>
+                <td class='score'>4926</td>
+                <td class='graph'>
+                  <div class='benchmark-bar' style='width:22%'>
+                    &nbsp;
+                  </div>
+                </td>
+              </tr>
+              </tbody>
+            </table>
+          </div>
+
+        </div>
+      </div>
+
+
+    </div>
+    <div class='secondary clearfix col-lg-3'>
+      <div class='sidebar-nav'>
+        <ul class='geekbench-nav nav flex-column'></ul>
+      </div>
+      <a href="https://www.geekbench.com?utm_source=browser&utm_medium=banner&utm_campaign=rosedale">
+        <img style="width: 255px;" src="https://browser.geekbench.com/assets/ads/rosedale-255x600@2x-e3a672ca7f22dce2233c859bb4ea4541a878feb2a73fb8803a8b217a24bf1eca.jpg" alt="Geekbench 6 now available" />
+      </a>
+
+
+
+    </div>
+  </div>
+</div>
+<footer class='footer'>
+  <div class='container'>
+    <div class='row'>
+      <div class='col-6 col-sm-6 col-md-3 col-lg-2'>
+        <h6>Products</h6>
+        <ul>
+          <li>
+            <a href='https://www.geekbench.com/'>Geekbench 6</a>
+          </li>
+          <li>
+            <a href='https://www.geekbench.com/ml/'>Geekbench ML</a>
+          </li>
+          <li>
+            <a href='https://www.voodoopad.com/'>VoodooPad</a>
+          </li>
+        </ul>
+      </div>
+      <div class='col-6 col-sm-6 col-md-3 col-lg-2'>
+        <h6>Support</h6>
+        <ul>
+          <li>
+            <a href='http://support.primatelabs.com/kb'>Knowledge Base</a>
+          </li>
+          <li>
+            <a href='https://store.primatelabs.com/store/lost_license/'>Lost License</a>
+          </li>
+          <li>
+            <a href='https://www.primatelabs.com/contact/'>Contact</a>
+          </li>
+          <li>
+            <a href='https://www.primatelabs.com/legal/privacy.html'>Privacy Policy</a>
+          </li>
+          <li>
+            <a href='https://www.primatelabs.com/legal/terms-of-use.html'>Terms of Use</a>
+          </li>
+        </ul>
+      </div>
+      <div class='col-6 col-sm-6 col-md-3 col-lg-2'>
+        <h6>News &amp; Social</h6>
+        <ul>
+          <li>
+            <a href='http://www.primatelabs.com/blog/'>Blog</a>
+          </li>
+          <li>
+            <a href='https://mastodon.social/@geekbench'>Mastodon</a>
+          </li>
+          <li>
+            <a href='https://discord.gg/KCQ7tWh'>Discord</a>
+          </li>
+          <li>
+            <a href='https://www.instagram.com/primatelabs/'>Instagram</a>
+          </li>
+          <li>
+            <a href='https://www.youtube.com/channel/UCAr1oShRa70bzaEYwvyLWig/feed'>YouTube</a>
+          </li>
+        </ul>
+      </div>
+      <div class='col-6 col-sm-6 col-md-3 col-lg-2'>
+        <h6>Company</h6>
+        <ul>
+          <li>
+            <a href='https://www.primatelabs.com/contact/'>Corporate</a>
+          </li>
+          <li>
+            <a href='https://www.primatelabs.com/careers/'>Careers</a>
+          </li>
+          <li>
+            <a href='https://www.primatelabs.com/contact/'>Media</a>
+          </li>
+        </ul>
+      </div>
+      <div class='col-12 col-lg-4 order-lg-first'>
+        <p class='small'>
+          <a href='https://www.primatelabs.com'>
+            <img height="30" alt="Geekbench" src="/assets/geekbench-dark-db84d4a4c0d8883b5973004996df2e8601412332bbd0767bd35729010db4ebd3.svg" />
+          </a>
+        </p>
+        <p>
+          Copyright © 2004-2024 Primate Labs Inc.
+        </p>
+      </div>
+    </div>
+    <div class='row row-centered'>
+      <div class='copyright col-12'></div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
+</title>
+</head>
+<body>
+
+</body>
+</html>
