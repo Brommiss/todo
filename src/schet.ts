@@ -82,3 +82,59 @@ fetch('https://browser.geekbench.com/processor-benchmarks', {
   }))
   console.log(all)
 })
+
+type CPUInfo = {
+  [key: string]: {
+    [key: string]: number
+  }
+}
+
+const cpuData: CPUInfo = {
+  'Intel Core i7-6700 CPU @ 3.40GHz': {
+    GhostRider: 541,
+    RandomX: 2800,
+    benchmark: 4151
+  },
+  'Intel Core i7-7700K CPU @ 4.20GHz': {
+    GhostRider: 291,
+    RandomX: 790,
+    VerusHash: 8550000,
+    benchmark: 4462
+  },
+  'Intel Core i7-8700K CPU @ 3.70GHz': {
+    GhostRider: 778,
+    RandomX: 5790,
+    benchmark: 1564
+  },
+  'Intel Core i9-10900K CPU @ 3.70GHz': {
+    GhostRider: 1340,
+    RandomX: 10000,
+    benchmark: 8460
+  },
+  'Intel Xeon CPU E5-2680 v3 @ 2.50GHz': {
+    RandomX: 6650,
+    benchmark: 3310
+  }
+}
+
+// Extract featureMatrix and targetVector
+const featureMatrix: number[] = []
+const targetVector: number[] = []
+
+for (const key in cpuData) {
+  if (cpuData[key].hasOwnProperty('RandomX') && cpuData[key].hasOwnProperty('benchmark')) {
+    featureMatrix.push(cpuData[key].RandomX)
+    targetVector.push(cpuData[key].benchmark)
+  }
+}
+
+// Perform linear regression
+const linearRegression = ss.linearRegression(featureMatrix.map((x, i) => [x, targetVector[i]]))
+const linearRegressionLine = ss.linearRegressionLine(linearRegression)
+
+console.log('Slope:', linearRegression.m)
+console.log('Intercept:', linearRegression.b)
+
+// Predict values
+const predictions = featureMatrix.map(x => linearRegressionLine(x))
+console.log('Predictions:', predictions)
